@@ -9,12 +9,19 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         a:hover{
-            transition: .5s ease-in-out;
+            transition: .3s ease-in-out;
+        }
+
+        .hero-bg{
+            background: url(./assets/images/bg.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
         }
     </style>
 </head>
 <body>
-    <section class="shadow-lg bg-white">
+    <section class="shadow-xl bg-white absolute w-full">
+
         <div class="container mx-auto py-2 px-8 md:px-0">
             <div class="block md:flex items-center justify-between">
     
@@ -103,8 +110,52 @@
 
     
         </div>
+
     </section>
 
+    <section class="hero-bg w-full">
+
+        <div class="h-screen flex items-center">
+
+            <div class="mx-auto">
+                <h1 class="font-bold text-3xl md:text-5xl max-w-lg text-center text-black md:max-w-5xl mx-auto">
+                    We help businesses accelerate digital transformation
+                </h1>
+
+                <p class="font-normal md:text-md my-4 max-w-lg text-center md:max-w-4xl mx-auto">
+                    With our vetted team of professionals, we help design and craft solutions tailored to match
+                    your business and connect you with clients worldwide.
+                </p>
+
+                <div class="max-w-fit mx-auto mt-8">
+                    <a href="#"
+                    class="font-medium px-4 py-2 border-2 border-cyan-400 hover:text-cyan-400 mx-4">
+                        See How
+                    </a>
+
+                    <a href="#"
+                        class="font-medium text-white px-4 py-2 bg-cyan-400 border-2 border-cyan-400 mx-4">
+                        Let's Talk
+                    </a>
+
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="h-screen flex items-center">
+        <div>
+            <h1
+            >
+
+            </h1>
+        </div>
+        <div>
+
+        </div>
+    </section>
     
 </body>
 <script src="./script.js"></script>
