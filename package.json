@@ -1,30 +1,30 @@
 {
   "name": "added",
   "version": "1.0.0",
-  "description": "A full website design for added digital world",
+  "description": "A full web design for Added Digital World",
   "main": "index.js",
   "scripts": {
     "test": "qg-test",
-    "build-tailwind": "npx tailwindcss -i ./assets/css/input.css -o ./assets/css/tailwind.css  --watch"
+    "build-tailwind": "npx tailwindcss -i ./assets/css/tailwind.css -o ./assets/css/app.css  --watch"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Qaudri/added.git"
   },
   "keywords": [
-    "webdesign",
     "added",
-    "added"
+    "added",
+    "web design"
   ],
-  "author": "qaudri",
+  "author": "Qaudri",
   "license": "MIT",
   "bugs": {
-    "url": "https://https://github.com/Qaudri/added/issues"
+    "url": "https://github.com/Qaudri/added/issues"
   },
-  "homepage": "https://https://github.com/Qaudri/added#readme",
+  "homepage": "https://github.com/Qaudri/added#readme",
   "devDependencies": {
-    "autoprefixer": "^10.4.1",
-    "postcss": "^8.4.5",
-    "tailwindcss": "^3.0.7"
+    "autoprefixer": "^10.4.0",
+    "postcss": "^8.4.4",
+    "tailwindcss": "^2.2.19"
   }
 }
