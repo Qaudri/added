@@ -6,9 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Who We Are</title>
     <link rel="stylesheet" href="./assets/css/app.css">
+    <style>
+        .floating-image{
+            left: 60%;
+            top: 20%;
+        }
+    </style>
 </head>
 <body>
-    <header class="shadow-lg bg-white fixed w-full">
+    <header class="shadow-lg bg-white fixed w-full z-20">
 
         <div class="container mx-auto py-4 md:py-2 px-8 md:px-0">
             <div class="block md:flex items-center justify-between">
@@ -16,7 +22,7 @@
                 <div class="flex justify-between">
                     <div class="">
                         <a href="./index.html">
-                            <img src="./Assets/images/logo-color.svg" alt="" width="75px" class="block" />
+                            <img src="./Assets/images/main-logo.svg" alt="" width="75px" class="block" />
                         </a>
                     </div>
         
@@ -40,7 +46,7 @@
                     <a href="#">
                         <span class="flex">
                             <p class="text-black font-medium md:ml-4 mr-2 hover:text-cyan-400 block ml-8 my-0 md:my-0"> Our Services </p>
-                            <img src="./Assets/images/arrow down.svg" alt="" width="20px" class="md:mr-4 my-0 md:my-0 block" id="servicesDown"/>
+                            <img src="./Assets/images/expand_arrow.svg" alt="" width="20px" class="md:mr-4 my-0 md:my-0 block" id="servicesDown"/>
                             <img src="./assets/images/arrow-up.svg" alt="" width="20px" class="md:mr-4 my-0 md:my-0 hidden" id="servicesUp"/>
                         </span>
                     </a>
@@ -102,8 +108,8 @@
     </header>
 
     <section class="h-screen flex items-center">
-        <div class="container mx-auto flex justify-between">
-            <div class="w-1/2 mr-6">
+        <div class="container mx-auto md:flex justify-between md:px-0 px-8">
+            <div class="md:w-5/12 md:mr-6">
                 <h1
                     class="font-bold text-4xl md:text-6xl max-w-lg text-left text-cyan-400 my-4 md:max-w-8xl">
                     We're a team of creators and innovators
@@ -118,8 +124,13 @@
                 </a>
             </div>
 
-            <div class="w-1/2 ml-6">
+            <div class="md:w-7/2 md:ml-6 md:static">
+                <div class="absolute z-10 w-4/12 top-1/4 floating-image">
+                    <img src="./assets/images/team-image.jpg" alt="" class="" width="100%" />
+                </div>
 
+                <div class="bg-cyan-400 w-4/12 h-5/6 z-0 absolute top-0 right-0">
+                </div>
             </div>
         </div>
     </section>
