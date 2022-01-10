@@ -7,9 +7,12 @@
     <title>Who We Are</title>
     <link rel="stylesheet" href="./assets/css/app.css">
     <style>
-        .floating-image{
-            left: 60%;
+        .floating-bg{
+            background: url(#background);
+            position: absolute;
             top: 20%;
+            right: 10%;
+            z-index: 10;
         }
     </style>
 </head>
@@ -107,15 +110,15 @@
 
     </header>
 
-    <section class="h-screen flex items-center">
-        <div class="container mx-auto md:flex justify-between md:px-0 px-8">
+    <section class="md:h-screen h-fit py-8 md:py-0 flex items-center">
+        <div class="container mx-auto md:flex justify-between md:p-0 px-8 py-14">
             <div class="md:w-5/12 md:mr-6">
                 <h1
-                    class="font-bold text-4xl md:text-6xl max-w-lg text-left text-cyan-400 my-4 md:max-w-8xl">
+                    class="font-bold text-4xl lg:text-6xl max-w-lg text-left text-cyan-400 my-4 md:max-w-8xl">
                     We're a team of creators and innovators
                 </h1>
                 <p
-                    class="font-medium text-sm md:text-base my-4 md:mb-6 max-w-lg text-left md:max-w-4xl mx-auto">
+                    class="lg:font-medium font-normal text-xs md:text-base my-4 md:mb-6 max-w-lg text-left lg:max-w-4xl mx-auto">
                     We help businesses acrossed the world grow and improve customer loyalty with creatively crafted designs.
                 </p>
                 <a href="#"
@@ -124,16 +127,17 @@
                 </a>
             </div>
 
-            <div class="md:w-7/2 md:ml-6 md:static">
-                <div class="absolute z-10 w-4/12 top-1/4 floating-image">
-                    <img src="./assets/images/team-image.jpg" alt="" class="" width="100%" />
-                </div>
-
-                <div class="bg-cyan-400 w-4/12 h-5/6 z-0 absolute top-0 right-0">
+            
+            <div class="static h-screen-70">
+                <div class="my-8 md:my-0 md:w-7/2 md:ml-6 relative md:static ml-8 mt-20 md:px-0">
+                    <img src="./assets/images/team-image.jpg" alt="" width="400px" class="floating-bg">
+                    <div class="bg-cyan-400 md:h-screen-80 h-screen-60 md:w-3/12 w-2/3 md:top-0 -top-10 right-0 absolute" id="background">
+                    </div>
                 </div>
             </div>
         </div>
     </section>
+
 
     <footer class="bg-gray-900">
         <div class="container mx-auto py-6 md:px-0 px-8">
