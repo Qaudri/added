@@ -40,3 +40,33 @@ function closeServices() {
     servicesUpBtn.style.display = "none";
     servicesDownBtn.style.display = "block";
 }
+
+const shortProfile = document.getElementById("profile");
+const allProfile = document.getElementById("full-profile");
+const closeProfile = document.getElementById("closeProfileBtn");
+
+shortProfile.addEventListener("click", displayAll);
+closeProfile.addEventListener("click", closeAll);
+
+function displayAll() {
+    allProfile.style.display = "block";
+}
+
+function closeAll() {
+    allProfile.style.display = "none";
+}
+
+const solarShortProfile = document.getElementById("solar-profile");
+const solarAllProfile = document.getElementById("solar-full-profile");
+const solarcloseProfile = document.getElementById("solarCloseProfileBtn");
+
+solarShortProfile.addEventListener("click", sdisplayAll);
+solarcloseProfile.addEventListener("click", scloseAll);
+
+function sdisplayAll() {
+    solarAllProfile.style.display = "block";
+}
+
+function scloseAll() {
+    solarAllProfile.style.display = "none";
+}

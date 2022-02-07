@@ -5,16 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Who We Are</title>
-    <link rel="stylesheet" href="./assets/css/app.css">
-    <style>
-        .floating-bg{
-            background: url(#background);
-            position: absolute;
-            top: 20%;
-            right: 10%;
-            z-index: 10;
-        }
-    </style>
+    <link rel="stylesheet" href="./assets/css/app.css" type="text/css">
+    <link rel="stylesheet" href="./assets/css/styles.css" type="text/css">
 </head>
 <body>
     <header class="shadow-lg bg-white fixed w-full z-20">
@@ -110,15 +102,16 @@
 
     </header>
 
-    <section class="md:h-screen h-fit py-8 md:py-0 flex items-center">
-        <div class="container mx-auto md:flex justify-between md:p-0 px-8 py-14">
-            <div class="md:w-5/12 md:mr-6">
+    <section class="flex items-center pt-10 md:py-0 bg-white">
+        <div class="container mx-auto md:flex justify-between items-center py-14">
+
+            <div class="w-full md:w-1/2 md:mr-6 px-8 md:p-0">
                 <h1
-                    class="font-bold text-4xl lg:text-6xl max-w-lg text-left text-cyan-400 my-4 md:max-w-8xl">
+                    class="font-bold text-5xl lg:text-6xl max-w-lg text-left text-cyan-400 my-4 md:max-w-8xl">
                     We're a team of creators and innovators
                 </h1>
                 <p
-                    class="lg:font-medium font-normal text-xs md:text-base my-4 md:mb-6 max-w-lg text-left lg:max-w-4xl mx-auto">
+                    class="lg:font-medium font-normal text-sm md:text-base my-4 md:mb-6 max-w-lg text-left lg:max-w-4xl mx-auto">
                     We help businesses acrossed the world grow and improve customer loyalty with creatively crafted designs.
                 </p>
                 <a href="#"
@@ -127,17 +120,162 @@
                 </a>
             </div>
 
-            
-            <div class="static h-screen-70">
-                <div class="my-8 md:my-0 md:w-7/2 md:ml-6 relative md:static ml-8 mt-20 md:px-0">
-                    <img src="./assets/images/team-image.jpg" alt="" width="400px" class="floating-bg">
-                    <div class="bg-cyan-400 md:h-screen-80 h-screen-60 md:w-3/12 w-2/3 md:top-0 -top-10 right-0 absolute" id="background">
+            <div class="w-full md:w-5/12 mt-12">
+                <img src="./assets/images/team-image.png" alt="" class="w-full">
+            </div>
+
+        </div>
+    </section>
+
+    <section class="md:py-10">
+        <div>
+            <div class="flex justify-center items-center w-full container mx-auto">
+                <div>
+                    <h1 class="font-bold text-5xl lg:text-6xl text-center text-cyan-400 my-2">Meet the Team</h1>
+                    <p class="lg:font-medium font-normal text-sm md:text-base my-2 md:mb-6 max-w-lg text-center lg:max-w-4xl mx-auto">These are the people who make the magic happen.</p>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-4">
+                <div class="flex">
+                    <div id="profile">
+                        <a class="flex items-end noarex p-6 cursor-pointer group">
+                            <div class="">
+                                <h1 class="text-white font-semibold text-xl my-0">Bello Noah Olayemi</h1>
+        
+                                <div class="group-hover:block hidden slide-up">
+                                    <p class="font-medium text-white text-md my-0">(Noarex)</p>
+                                    <p class="mt-2 font-medium text-white text-lg">CEO | Brand Developer</p>
+                                </div>
+        
+                            </div>
+                        </a>
+                    </div>
+
+                    <div id="full-profile" class="hidden">
+                        <div class="slide-right bg-white p-6 min-w-1/2 full-profile absolute">
+                            <img src="./assets/images/close.svg" alt="" class="absolute z-90 top-2 right-2 cursor-pointer" width="30px" id="closeProfileBtn">
+                            <h1 class="text-cyan-400 font-semibold text-2xl my-0">Bello Noah Olayemi (Noarex)</h1>
+                            <h2 class="font-normal text-cyan-400 text-base my-0">CEO | Brand Developer</h2>
+                            <p class="my-3 font-normal text-black text-md max-w-fit">
+                                Noah Olayemi is a serial entrepreneur, investor, founder of Added Digital World. As a brand developer and graphics design expert,
+                                 he and his team have helped hundreds of companies streamline customer acquisition online and in social media over the last 10 years.
+                                 He is also majorly responsible for training the students on graphics design.
+                            </p>
+    
+                            <div class="flex mt-10">
+                                <img src="./assets/images/facebook-1.svg" alt="" width="30px" />
+                                <img src="./assets/images/twitter-1.svg" alt="" width="30px" />
+                                <img src="./assets/images/linkedin.svg" alt="" width="30px" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex">
+                    <div id="solar-profile">
+                        <a class="flex items-end solar p-6 cursor-pointer group">
+                            <div class="">
+                                <h1 class="text-white font-semibold text-xl my-0">Wahab Babatunde Hisorlar</h1>
+        
+                                <div class="group-hover:block hidden slide-up">
+                                    <p class="font-medium text-white text-md my-0">(Solar)</p>
+                                    <p class="mt-2 font-medium text-white text-lg">Co-CEO | Graphics Designer</p>
+                                </div>
+        
+                            </div>
+                        </a>
+                    </div>
+
+                    <div id="solar-full-profile" class="hidden">
+                        <div class="slide-right bg-white p-6 absolute full-profile">
+                            <img src="./assets/images/close.svg" alt="" class="absolute top-0 right-0 cursor-pointer" width="30px" id="solarCloseProfileBtn">
+                            <h1 class="text-cyan-400 font-semibold text-xl my-0">Wahab Babatunde Hisorlar (Solar)</h1>
+                            <h2 class="font-normal text-cyan-400 text-base my-0">Co-CEO | Graphics Designer</h2>
+                            <p class="my-3 font-normal text-black text-sm max-w-md">
+                                Wahab Babatunde is a visionary, entrepreneur, co-founder of Added Digital World. He has over ten years of experience creating captivating graphics for companies in various industries.
+                                He has helped boost Added's customers to the sky. 
+                            </p>
+    
+                            <div class="flex mt-10">
+                                <img src="./assets/images/facebook-1.svg" alt="" width="30px" />
+                                <img src="./assets/images/twitter-1.svg" alt="" width="30px" />
+                                <img src="./assets/images/linkedin.svg" alt="" width="30px" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex">
+                    <div id="solar-profile">
+                        <a class="flex items-end solar bg-black p-6 cursor-pointer group">
+                            <div class="">
+                                <h1 class="text-white font-semibold text-xl my-0">Wahab Babatunde Hisorlar</h1>
+        
+                                <div class="group-hover:block hidden slide-up">
+                                    <p class="font-medium text-white text-md my-0">(Solar)</p>
+                                    <p class="mt-2 font-medium text-white text-lg">Co-CEO | Graphics Designer</p>
+                                </div>
+        
+                            </div>
+                        </a>
+                    </div>
+
+                    <div id="solar-full-profile" class="hidden">
+                        <div class="slide-right bg-white p-6 absolute full-profile">
+                            <img src="./assets/images/close.svg" alt="" class="absolute top-2 right-2 cursor-pointer" width="30px" id="solarCloseProfileBtn">
+                            <h1 class="text-cyan-400 font-semibold text-xl my-0">Wahab Babatunde Hisorlar (Solar)</h1>
+                            <h2 class="font-normal text-cyan-400 text-base my-0">Co-CEO | Graphics Designer</h2>
+                            <p class="my-3 font-normal text-black text-sm max-w-md">
+                                Wahab Babatunde is a visionary, entrepreneur, co-founder of Added Digital World. He has over ten years of experience creating captivating graphics for companies in various industries.
+                                He has helped boost Added's customers to the sky. 
+                            </p>
+    
+                            <div class="flex mt-10">
+                                <img src="./assets/images/facebook-1.svg" alt="" width="30px" />
+                                <img src="./assets/images/twitter-1.svg" alt="" width="30px" />
+                                <img src="./assets/images/linkedin.svg" alt="" width="30px" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex flex-col-reverse">
+                    <div id="solar-profile">
+                        <a class="flex items-end solar p-6 cursor-pointer group">
+                            <div class="">
+                                <h1 class="text-white font-semibold text-xl my-0">Wahab Babatunde Hisorlar</h1>
+        
+                                <div class="group-hover:block hidden slide-up">
+                                    <p class="font-medium text-white text-md my-0">(Solar)</p>
+                                    <p class="mt-2 font-medium text-white text-lg">Co-CEO | Graphics Designer</p>
+                                </div>
+        
+                            </div>
+                        </a>
+                    </div>
+
+                    <div id="solar-full-profile" class="hidden">
+                        <div class="slide-left bg-white p-6 absolute full-profile">
+                            <img src="./assets/images/close.svg" alt="" class="absolute top-2 right-2 cursor-pointer" width="30px" id="solarCloseProfileBtn">
+                            <h1 class="text-cyan-400 font-semibold text-xl my-0">Wahab Babatunde Hisorlar (Solar)</h1>
+                            <h2 class="font-normal text-cyan-400 text-base my-0">Co-CEO | Graphics Designer</h2>
+                            <p class="my-3 font-normal text-black text-sm max-w-md">
+                                Wahab Babatunde is a visionary, entrepreneur, co-founder of Added Digital World. He has over ten years of experience creating captivating graphics for companies in various industries.
+                                He has helped boost Added's customers to the sky. 
+                            </p>
+    
+                            <div class="flex mt-10">
+                                <img src="./assets/images/facebook-1.svg" alt="" width="30px" />
+                                <img src="./assets/images/twitter-1.svg" alt="" width="30px" />
+                                <img src="./assets/images/linkedin.svg" alt="" width="30px" />
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
 
     <footer class="bg-gray-900">
         <div class="container mx-auto py-6 md:px-0 px-8">

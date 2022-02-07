@@ -1,0 +1,78 @@
+.hero-bg{
+    background: url(../images/bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.noarex{
+    background: linear-gradient(transparent, transparent, black), url(../images/noarex.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 25vw;
+    height: 300px;
+}
+
+.solar{
+    background: linear-gradient(transparent, transparent, black), url(../images/solar.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 25vw;
+    height: 300px;
+}
+
+:hover{
+    transition: .3s ease-in-out;
+}
+
+.slide-up{
+    animation: slideUp 1s forwards;
+}
+
+@keyframes slideUp {
+    from{
+        opacity: 0;
+        transform: translateY(5em);
+    }
+
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.slide-right{
+    animation: slideRight 1s forwards;
+    height: 300px;
+}
+
+@keyframes slideRight {
+    from{
+        transform: translateX(-10em);
+    }
+
+    to{
+        transform: translateX(0);
+    }
+}
+
+.slide-left{
+    animation: slideLeft 1s forwards;
+    height: 300px;
+}
+
+@keyframes slideLeft {
+    from{
+        transform: translateX(10em);
+    }
+
+    to{
+        transform: translateX(0);
+    }
+}
+
+.full-profile{
+    min-width: 50vw;
+    /* display: hidden; */
+}

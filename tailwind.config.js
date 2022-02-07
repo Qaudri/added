@@ -21,6 +21,13 @@ module.exports = {
         'screen-90': '90vh',
 
       }),
+
+      maxWidth: {
+        '1/4': '25%',
+        '1/2': '50%',
+        '3/4': '75%',
+      
+      },
       
       colors: {
 
@@ -56,13 +63,13 @@ module.exports = {
         'auto': 'auto',
       },
 
-      display: [
-        "group-hover",
-      ]
+      
     },
   },
   variants: {
-    extend: {},
+    extend: {
+      display: ['group-hover'],
+    },
   },
   plugins: [],
 }
