@@ -11,6 +11,7 @@
     background-repeat: no-repeat;
     width: 25vw;
     height: 300px;
+    margin: 0;
 }
 
 .solar{
@@ -53,7 +54,7 @@
     }
 
     to{
-        transform: translateX(0);
+        transform: translateX(-.29em);
     }
 }
 
@@ -68,11 +69,15 @@
     }
 
     to{
-        transform: translateX(0);
+        transform: translateX(.2rem);
     }
 }
 
 .full-profile{
-    min-width: 50vw;
+    width: 49.3vw;
     /* display: hidden; */
+}
+
+.themax{
+    max-width: 100%;
 }
