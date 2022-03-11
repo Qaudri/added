@@ -4,80 +4,62 @@
     background-repeat: no-repeat;
 }
 
-.noarex{
-    background: linear-gradient(transparent, transparent, black), url(../images/noarex.jpg);
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 25vw;
-    height: 300px;
-    margin: 0;
-}
-
-.solar{
-    background: linear-gradient(transparent, transparent, black), url(../images/solar.jpg);
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 25vw;
-    height: 300px;
-}
-
 :hover{
     transition: .3s ease-in-out;
 }
 
 .slide-up{
-    animation: slideUp 1s forwards;
+    animation: slideUp 1.2s forwards;
 }
 
 @keyframes slideUp {
     from{
         opacity: 0;
-        transform: translateY(5em);
+        transform: translateY(15em);
     }
 
     to{
         opacity: 1;
-        transform: translateY(0);
+        transform: translateY(6.5em);
     }
 }
 
 .slide-right{
-    animation: slideRight 1s forwards;
+    animation: slideRight 1.6s forwards;
     height: 300px;
 }
 
 @keyframes slideRight {
     from{
-        transform: translateX(-10em);
+        transform: translate3d(-10em, 0em, 0em);
+        opacity: 0;
     }
 
     to{
-        transform: translateX(-.29em);
+        transform: translate3d(2em, 1em, 0em);
+        opacity: 1;
     }
 }
 
 .slide-left{
-    animation: slideLeft 1s forwards;
+    animation: slideLeft 2s forwards;
     height: 300px;
 }
 
 @keyframes slideLeft {
     from{
         transform: translateX(10em);
+        opacity: 1;
     }
 
     to{
-        transform: translateX(.2rem);
+        transform: translateX(-2.2em);
+        opacity: 1;
     }
 }
 
-.full-profile{
-    width: 49.3vw;
-    /* display: hidden; */
-}
-
-.themax{
-    max-width: 100%;
+.profile-image {
+  width: 25vw;
+  height: 300px;
+  
 }
