@@ -8,55 +8,56 @@
     transition: .3s ease-in-out;
 }
 
-.slide-up{
-    animation: slideUp 1.2s forwards;
-}
-
-@keyframes slideUp {
-    from{
-        opacity: 0;
-        transform: translateY(15em);
+@media screen and (min-width: 1024px){
+    .slide-up{
+        animation: slideUp 1.2s forwards;
     }
 
-    to{
-        opacity: 1;
-        transform: translateY(6.5em);
+    @keyframes slideUp {
+        from{
+            opacity: 0;
+            transform: translateY(0em);
+        }
+    
+        to{
+            opacity: 1;
+            transform: translateY(3.5em);
+        }
+    }
+
+    .slide-right{
+        animation: slideRight 1.6s forwards;
+    }
+
+    @keyframes slideRight {
+        from{
+            transform: translate3d(-10em, 0em, 0em);
+            opacity: 0;
+        }
+    
+        to{
+            transform: translate3d(1.2em, 2em, 0em);
+            opacity: 1;
+        }
+    }
+
+    .slide-left{
+        animation: slideLeft 2s forwards;
+    }
+
+    @keyframes slideLeft {
+        from{
+            transform: translateX(10em);
+            opacity: 1;
+        }
+    
+        to{
+            transform: translateX(-2.2em);
+            opacity: 1;
+        }
     }
 }
 
-.slide-right{
-    animation: slideRight 1.6s forwards;
-    height: 300px;
-}
-
-@keyframes slideRight {
-    from{
-        transform: translate3d(-10em, 0em, 0em);
-        opacity: 0;
-    }
-
-    to{
-        transform: translate3d(2em, 1em, 0em);
-        opacity: 1;
-    }
-}
-
-.slide-left{
-    animation: slideLeft 2s forwards;
-    height: 300px;
-}
-
-@keyframes slideLeft {
-    from{
-        transform: translateX(10em);
-        opacity: 1;
-    }
-
-    to{
-        transform: translateX(-2.2em);
-        opacity: 1;
-    }
-}
 
 .profile-image {
   width: 25vw;
