@@ -64,3 +64,10 @@
   height: 300px;
   
 }
+
+.full-bg{
+    background: url(../images/team.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
